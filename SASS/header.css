@@ -1,0 +1,29 @@
+header {
+  background-color: var(--header-bg-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  position: relative;
+}
+header #logo-div {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9.5px 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+header #logo-div a {
+  font-family: var(--alternative-font);
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+}
+header p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  padding: 15.5px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #353535;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,25 @@
+@import "../SASS/header.css";
+@import "../SASS/main/intro.css";
+@import "../SASS/main/fonctionnement.css";
+@import "../SASS/main/restaurants.css";
+@import "../SASS/footer.css";
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --alternative-font: "Shrikhand", cursive;
+  --main-color: #9356dc;
+  --main-bg-color: #f6f6f6;
+  --header-bg-color: #eaeaea;
+  --button-background: linear-gradient(-3deg, #9356dc -11.44%, #ff79da 123.93%);
+  --new-overlay-color: #008766;
+  --new-overlay-bg-color: #99e2d0;
+  --footer-bg-color: #353535;
+}
+
+main {
+  background-color: var(--main-bg-color);
+}/*# sourceMappingURL=index.css.map */

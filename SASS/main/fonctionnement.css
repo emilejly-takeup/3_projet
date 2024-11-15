@@ -1,0 +1,40 @@
+#fonctionnement {
+  padding: 40px 20px;
+  background-color: white;
+}
+#fonctionnement div {
+  position: relative;
+  background-color: var(--main-bg-color);
+  margin: 25px 0;
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#fonctionnement div i {
+  color: #7e7e7e;
+  font-size: 20px;
+}
+#fonctionnement div p:first-of-type {
+  font-weight: 500;
+}
+#fonctionnement div p:last-child {
+  position: absolute;
+  left: -12px;
+  background-color: var(--main-color);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#fonctionnement div:hover {
+  background-color: #f5edff;
+}
+#fonctionnement div:hover i {
+  color: #9356dc;
+}/*# sourceMappingURL=fonctionnement.css.map */

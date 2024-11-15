@@ -1,8 +1,11 @@
-@import "../SASS/header.css";
-@import "../SASS/main/intro.css";
-@import "../SASS/main/fonctionnement.css";
-@import "../SASS/main/restaurants.css";
-@import "../SASS/footer.css";
+@import "../SASS/homepage/header.css";
+@import "../SASS/homepage/main/intro.css";
+@import "../SASS/homepage/main/fonctionnement.css";
+@import "../SASS/homepage/main/restaurants.css";
+@import "../SASS/homepage/footer.css";
+@import "../SASS/menu/header.css";
+@import "../SASS/menu/content.css";
+@import "../SASS/menu/footer.css";
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;

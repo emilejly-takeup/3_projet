@@ -23,14 +23,16 @@
     font-size: 16px;
     font-weight: 500;
     color: white;
-    background: var(--button-background);
+    background-color: red;
     border-radius: 25px;
     border: none;
     padding: 15px 20px;
     box-shadow: 0px 2px 4px 2px #0000001b;
+    transition: all 1s ease;
 
     &:hover {
         cursor: pointer;
-        background: var(--button-hover-background);
+        background-color: black;
+        box-shadow: 0px 2px 8px 2px #fb0606be;
     }
 }

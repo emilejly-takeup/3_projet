@@ -27,13 +27,15 @@
   font-size: 16px;
   font-weight: 500;
   color: white;
-  background: var(--button-background);
+  background-color: red;
   border-radius: 25px;
   border: none;
   padding: 15px 20px;
   box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1058823529);
+  transition: all 1s ease;
 }
 #intro-button:hover {
   cursor: pointer;
-  background: var(--button-hover-background);
+  background-color: black;
+  box-shadow: 0px 2px 8px 2px rgba(251, 6, 6, 0.7450980392);
 }/*# sourceMappingURL=intro.css.map */

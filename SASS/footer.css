@@ -28,4 +28,16 @@ footer li i {
 }
 footer .tight-icon {
   margin-right: 8px;
+}
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row-reverse;
+    padding: 35px 40px 25px 0;
+    align-items: center;
+    gap: 40px;
+  }
+  footer ul {
+    flex-direction: row;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=footer.css.map */

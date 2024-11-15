@@ -2,49 +2,71 @@
     padding: 40px 20px;
     background-color: white;
 
-    ol {
-        counter-reset: fonctionnement-counter;
-        list-style-type: none;
-        margin-left: 12px;
+    div {
+        max-width: 450px;
+        margin: 0 auto;
 
-        li {
-            position: relative;
-            background-color: var(--main-bg-color);
-            margin: 25px 0;
-            padding: 25px 30px;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-            display: flex;
-            align-items: center;
-            gap: 20px;
+        ol {
+            counter-reset: fonctionnement-counter;
+            list-style-type: none;
+            margin-left: 12px;
 
-            i {
-                color: #7e7e7e;
-                font-size: 20px;
-            }
-
-            p:first-of-type {
-                font-weight: 500;
-            }
-
-            &::before {
-                content: counter(fonctionnement-counter);
-                counter-increment: fonctionnement-counter;
-                position: absolute;
-                left: -12px;
-                background-color: var(--main-color);
-                width: 24px;
-                height: 24px;
-                border-radius: 50%;
+            li {
+                position: relative;
+                background-color: var(--main-bg-color);
+                margin: 25px 0;
+                padding: 25px 30px;
+                border-radius: 20px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                color: white;
+                gap: 20px;
+
+                i {
+                    color: #7e7e7e;
+                    font-size: 20px;
+                }
+
+                p:first-of-type {
+                    font-weight: 500;
+                }
+
+                &::before {
+                    content: counter(fonctionnement-counter);
+                    counter-increment: fonctionnement-counter;
+                    position: absolute;
+                    left: -12px;
+                    background-color: var(--main-color);
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                }
+            }
+
+            li:hover > i {
+                color: var(--main-color);
             }
         }
+    }
 
-        li:hover > i {
-            color: var(--main-color);
+    @media (min-width: 1024px) {
+        div {
+            max-width: 1080px;
+            margin: 0 auto;
+
+            ol {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                li {
+                    width: 25%;
+                }
+            }
         }
     }
 }

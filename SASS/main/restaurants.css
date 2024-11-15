@@ -1,5 +1,7 @@
 #restaurants {
   padding: 50px 17px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 #restaurants h2 {
   margin-bottom: 20px;
@@ -61,4 +63,26 @@
   bottom: 2rem;
   font-size: 24px;
   cursor: pointer;
+}
+@media (min-width: 1024px) {
+  #restaurants {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  #restaurants div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 100px;
+  }
+  #restaurants div article {
+    margin: 0;
+  }
+  #restaurants div article img {
+    -o-object-position: center center;
+       object-position: center center;
+  }
+  #restaurants div article .img-centering {
+    -o-object-position: center 58%;
+       object-position: center 58%;
+  }
 }/*# sourceMappingURL=restaurants.css.map */

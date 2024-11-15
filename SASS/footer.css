@@ -1,1 +1,31 @@
-/*# sourceMappingURL=footer.css.map */
+footer {
+  background-color: var(--footer-bg-color);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px 22px 25px;
+  gap: 16px;
+}
+footer #footer-logo {
+  font-family: var(--alternative-font);
+  font-size: 18px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer li {
+  list-style-type: none;
+}
+footer li i {
+  margin-right: 13px;
+  font-size: 14px;
+}
+footer .tight-icon {
+  margin-right: 8px;
+}/*# sourceMappingURL=footer.css.map */

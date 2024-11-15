@@ -2,7 +2,12 @@
   padding: 40px 20px;
   background-color: white;
 }
-#fonctionnement div {
+#fonctionnement ol {
+  counter-reset: fonctionnement-counter;
+  list-style-type: none;
+  margin-left: 12px;
+}
+#fonctionnement ol li {
   position: relative;
   background-color: var(--main-bg-color);
   margin: 25px 0;
@@ -13,28 +18,27 @@
   align-items: center;
   gap: 20px;
 }
-#fonctionnement div i {
+#fonctionnement ol li i {
   color: #7e7e7e;
   font-size: 20px;
 }
-#fonctionnement div p:first-of-type {
+#fonctionnement ol li p:first-of-type {
   font-weight: 500;
 }
-#fonctionnement div p:last-child {
+#fonctionnement ol li::before {
+  content: counter(fonctionnement-counter);
+  counter-increment: fonctionnement-counter;
   position: absolute;
   left: -12px;
   background-color: var(--main-color);
-  color: white;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
-#fonctionnement div:hover {
-  background-color: #f5edff;
-}
-#fonctionnement div:hover i {
-  color: #9356dc;
+#fonctionnement ol li:hover > i {
+  color: var(--main-color);
 }/*# sourceMappingURL=fonctionnement.css.map */

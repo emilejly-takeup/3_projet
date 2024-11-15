@@ -9,12 +9,18 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --alternative-font: "Shrikhand", cursive;
   --main-color: #9356dc;
   --main-bg-color: #f6f6f6;
   --header-bg-color: #eaeaea;
   --button-background: linear-gradient(-3deg, #9356dc -11.44%, #ff79da 123.93%);
+  --button-hover-background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%),
+      linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
   --new-overlay-color: #008766;
   --new-overlay-bg-color: #99e2d0;
   --footer-bg-color: #353535;

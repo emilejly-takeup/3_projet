@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>ohmyfood</title>
         <link rel="stylesheet" href="assets/index.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,14 +25,16 @@
             <div id="logo-div">
                 <a href="index.html">ohmyfood</a>
             </div>
-            <!-- TODO: changer pour un input dans un form -->
-            <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
+            <form action="">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Position" value="Paris, Belleville" />
+            </form>
         </header>
         <main>
             <!-- Introduction -->
             <h1 id="intro-title">Réservez le menu qui vous convient</h1>
             <p id="intro-text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button id="intro-button">Explorer nos restaurants</button>
+            <button id="intro-button" onclick="window.location.href='#restaurants'">Explorer nos restaurants</button>
 
             <!-- Fonctionnement -->
             <section id="fonctionnement">
@@ -54,45 +56,54 @@
             </section>
 
             <!-- Restaurants -->
-            <section>
+            <section id="restaurants">
                 <h2>Restaurants</h2>
-                <article>
-                    <img src="assets/restaurants/palette-du-gout.jpg" alt="palette-du-gout" />
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                    <i class="fa-regular fa-heart"></i>
-                </article>
-                <article>
-                    <img src="assets/restaurants/note-enchantee.jpg" alt="note-enchantee" />
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
-                    <i class="fa-solid fa-heart"></i>
-                </article>
-                <article>
-                    <img src="assets/restaurants/a-la-francaise.jpg" alt="a-la-francaise" />
-                    <h3>À la française</h3>
-                    <p>Cité Rouge</p>
-                    <i class="fa-solid fa-heart"></i>
-                </article>
-                <article>
-                    <img src="assets/restaurants/delice-des-sens.jpg" alt="delice-des-sens" />
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
-                    <i class="fa-solid fa-heart"></i>
-                </article>
+                <a href="">
+                    <article>
+                        <img src="assets/restaurants/palette-du-gout.jpg" alt="palette-du-gout" />
+                        <span>Nouveau</span>
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </article>
+                </a>
+                <a href="">
+                    <article>
+                        <img class="img-centering" src="assets/restaurants/note-enchantee.jpg" alt="note-enchantee" />
+                        <span>Nouveau</span>
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </article>
+                </a>
+                <a href="">
+                    <article>
+                        <img src="assets/restaurants/a-la-francaise.jpg" alt="a-la-francaise" />
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </article>
+                </a>
+                <a href="">
+                    <article>
+                        <img src="assets/restaurants/delice-des-sens.jpg" alt="delice-des-sens" />
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </article>
+                </a>
             </section>
         </main>
 
         <!-- Footer -->
         <footer>
-            <!-- TODO : changer l'icon pour un texte -->
-            <img src="assets/logo/ohmyfood.png" alt="logo" />
+            <a id="footer-logo" href="index.html">ohmyfood</a>
             <ul>
                 <li>
                     <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+                    <a href="#"><i class="fa-solid fa-handshake-angle tight-icon"></i>Devenir partenaire</a>
                 </li>
                 <li>
                     <a href="#">Mentions légales</a>

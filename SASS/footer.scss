@@ -1,0 +1,37 @@
+footer {
+    background-color: var(--footer-bg-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 25px 22px 25px;
+    gap: 16px;
+
+    #footer-logo {
+        font-family: var(--alternative-font);
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    li {
+        list-style-type: none;
+
+        i {
+            margin-right: 13px;
+            font-size: 14px;
+        }
+    }
+
+    .tight-icon {
+        margin-right: 8px;
+    }
+}

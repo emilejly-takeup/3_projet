@@ -8,52 +8,116 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.menu-section .menu-section-content {
-  position: absolute;
-  top: 220px;
+.menu-section .section-content {
+  position: relative;
+  margin-top: -55px;
   width: 100%;
   background-color: var(--main-bg-color);
   border-radius: 40px 40px 0 0;
   padding: 40px 0;
 }
-.menu-section .menu-section-content .menu-section-content-title {
+.menu-section .section-content .content-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 40px 0 20px;
 }
-.menu-section .menu-section-content .menu-section-content-title h1 {
+.menu-section .section-content .content-title h1 {
   font-family: var(--alternative-font);
   font-size: 28px;
   font-weight: 400;
 }
-.menu-section .menu-section-content .menu-section-content-title .heart-div {
+.menu-section .section-content .content-title .heart-div {
   width: 24px;
   height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.menu-section .menu-section-content .menu-section-content-group {
-  padding: 30px 40px 0 20px;
+.menu-section .section-content .content-group {
+  padding: 30px 13px 0 13px;
 }
-.menu-section .menu-section-content .menu-section-content-group h2 {
+.menu-section .section-content .content-group h2 {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 20px;
 }
-.menu-section .menu-section-content .menu-section-content-group h2::after {
+.menu-section .section-content .content-group h2::after {
   content: "";
   display: block;
   width: 40px;
   border-bottom: 3px solid var(--new-overlay-bg-color);
 }
-.menu-section .menu-section-content .menu-section-content-group .menu-section-content-group-item {
-  padding: 18px 15px;
+.menu-section .section-content .content-group .group-item {
+  position: relative;
+  padding: 13px 15px;
   background-color: white;
+  margin-bottom: 12px;
   border-radius: 15px;
+  white-space: nowrap;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+  transition: padding 250ms ease-out;
 }
-.menu-section .menu-section-content .menu-section-content-group .menu-section-content-group-item p {
+.menu-section .section-content .content-group .group-item h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.menu-section .section-content .content-group .group-item .item-description {
   display: flex;
   justify-content: space-between;
+  font-size: 15px;
+}
+.menu-section .section-content .content-group .group-item .item-description .description-text {
+  font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.menu-section .section-content .content-group .group-item .item-description .description-price {
+  font-weight: 700;
+}
+.menu-section .section-content .content-group .group-item .item-description .item-selected {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  font-size: 20px;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--new-overlay-bg-color);
+  transition: width 250ms ease-out, opacity 250ms ease-out;
+}
+.menu-section .section-content .content-group .group-item:hover {
+  cursor: pointer;
+  padding: 13px 74px 13px 15px;
+}
+.menu-section .section-content .content-group .group-item:hover .item-selected {
+  width: 59px;
+  opacity: 1;
+}
+.menu-section .section-content button {
+  display: block;
+  margin: 40px auto 0 auto;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background: var(--button-background);
+  border-radius: 25px;
+  border: none;
+  padding: 15px 49px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: all 300ms ease;
+}
+.menu-section .section-content button:hover {
+  cursor: pointer;
+  opacity: 0.85;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }/*# sourceMappingURL=content.css.map */

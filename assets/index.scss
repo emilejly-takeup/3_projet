@@ -94,3 +94,34 @@ html {
 main {
     background-color: var(--main-bg-color);
 }
+
+.heart-div {
+    .fa-heart {
+        cursor: pointer;
+        transition: all 300ms ease;
+    }
+
+    .fa-regular {
+        font-size: 24px;
+    }
+
+    .fa-solid {
+        opacity: 0.5;
+        position: absolute;
+        font-size: 0;
+        background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &:hover {
+        .fa-regular {
+            opacity: 0;
+        }
+        .fa-solid {
+            opacity: 1;
+            font-size: 24px;
+        }
+    }
+}

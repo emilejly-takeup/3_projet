@@ -66,29 +66,6 @@
   align-items: center;
   justify-content: center;
 }
-#restaurants a article .heart-div .fa-heart {
-  cursor: pointer;
-  transition: all 300ms ease;
-}
-#restaurants a article .heart-div .fa-regular {
-  font-size: 24px;
-}
-#restaurants a article .heart-div .fa-solid {
-  opacity: 0.5;
-  position: absolute;
-  font-size: 0;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-#restaurants a article .heart-div:hover .fa-regular {
-  opacity: 0;
-}
-#restaurants a article .heart-div:hover .fa-solid {
-  opacity: 1;
-  font-size: 24px;
-}
 @media (min-width: 768px) {
   #restaurants {
     max-width: 768px;

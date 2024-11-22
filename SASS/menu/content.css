@@ -27,8 +27,12 @@
   font-size: 28px;
   font-weight: 400;
 }
-.menu-section .menu-section-content .menu-section-content-title i {
-  font-size: 24px;
+.menu-section .menu-section-content .menu-section-content-title .heart-div {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menu-section .menu-section-content .menu-section-content-group {
   padding: 30px 40px 0 20px;

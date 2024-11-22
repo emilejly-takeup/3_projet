@@ -86,4 +86,28 @@ html {
 }
 main {
   background-color: var(--main-bg-color);
+}
+
+.heart-div .fa-heart {
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.heart-div .fa-regular {
+  font-size: 24px;
+}
+.heart-div .fa-solid {
+  opacity: 0.5;
+  position: absolute;
+  font-size: 0;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.heart-div:hover .fa-regular {
+  opacity: 0;
+}
+.heart-div:hover .fa-solid {
+  opacity: 1;
+  font-size: 24px;
 }/*# sourceMappingURL=index.css.map */

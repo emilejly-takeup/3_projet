@@ -3,9 +3,8 @@
     background-color: white;
 
     div {
-        max-width: 450px;
+        max-width: 1080px;
         margin: 0 auto;
-
         ol {
             counter-reset: fonctionnement-counter;
             list-style-type: none;
@@ -54,18 +53,13 @@
     }
 
     @media (min-width: 1024px) {
-        div {
-            max-width: 1080px;
-            margin: 0 auto;
+        ol {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
 
-            ol {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-
-                li {
-                    width: 26%;
-                }
+            li {
+                width: 26%;
             }
         }
     }

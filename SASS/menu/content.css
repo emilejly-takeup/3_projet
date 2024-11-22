@@ -1,26 +1,28 @@
 .menu-section {
-  background-color: var(--main-bg-color);
+  background-color: white;
   position: relative;
 }
 .menu-section img {
-  height: 275px;
+  height: clamp(275px, 30vw, 383px);
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .menu-section .section-content {
   position: relative;
-  margin-top: -55px;
+  max-width: 1055px;
+  margin: -55px auto 0 auto;
+  padding: 40px 0;
   width: 100%;
   background-color: var(--main-bg-color);
   border-radius: 40px 40px 0 0;
-  padding: 40px 0;
 }
 .menu-section .section-content .content-title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 0 40px 0 20px;
+  justify-content: center;
+  gap: 20px;
 }
 .menu-section .section-content .content-title h1 {
   font-family: var(--alternative-font);
@@ -36,6 +38,8 @@
 }
 .menu-section .section-content .content-group {
   padding: 30px 13px 0 13px;
+  max-width: 634px;
+  margin: 0 auto;
 }
 .menu-section .section-content .content-group h2 {
   font-size: 16px;

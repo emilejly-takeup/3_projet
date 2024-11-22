@@ -2,6 +2,12 @@
   background-color: var(--header-bg-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   position: relative;
+  transition: box-shadow 0.5s ease;
+}
+@media (min-width: 768px) {
+  .homepage-header {
+    box-shadow: none;
+  }
 }
 .homepage-header div {
   background-color: white;
@@ -10,6 +16,12 @@
   align-items: center;
   padding: 9.5px 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: box-shadow 0.5s ease;
+}
+@media (min-width: 768px) {
+  .homepage-header div {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  }
 }
 .homepage-header div a {
   font-family: var(--alternative-font);
